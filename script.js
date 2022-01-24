@@ -32,7 +32,4 @@ addButton.addEventListener('click', function(){
   taskToAdd.setAttribute('sc-list-item',"")
   taskToAdd.innerText = addBox.value
   toDoList.appendChild(taskToAdd)
-
-
-
 })
