@@ -19,3 +19,20 @@ dropzones.forEach(dropzone => {
     dropzone.appendChild(item)
   }
 })
+
+const addButton = document.querySelector('[sc-addButton]')
+
+const addBox = document.querySelector('[sc-addTask]')
+const toDoList = document.querySelector('[sc-toDoList')
+
+addButton.addEventListener('click', function(){
+  
+  const taskToAdd = document.createElement('div')
+  taskToAdd.classList.add('list-item')
+  taskToAdd.setAttribute('sc-list-item',"")
+  taskToAdd.innerText = addBox.value
+  toDoList.appendChild(taskToAdd)
+
+
+
+})
