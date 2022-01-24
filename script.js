@@ -1,14 +1,8 @@
 
 
 
-const items = document.querySelectorAll('[sc-list-item]')
-items.forEach((item, index) => {
-  item.draggable = true
-  item.id = item.id || `draggable-item-${index}`
-  item.ondragstart = e => {
-    e.dataTransfer.setData('item-id', e.target.id)
-  }
-})
+
+setDraggable()
 
 const dropzones = document.querySelectorAll('[sc-dropzone]')
 dropzones.forEach(dropzone => {
@@ -32,4 +26,16 @@ addButton.addEventListener('click', function(){
   taskToAdd.setAttribute('sc-list-item',"")
   taskToAdd.innerText = addBox.value
   toDoList.appendChild(taskToAdd)
+  setDraggable()
 })
+
+function setDraggable(){
+  const items = document.querySelectorAll('[sc-list-item]')
+items.forEach((item, index) => {
+  item.draggable = true
+  item.id = item.id || `draggable-item-${index}`
+  item.ondragstart = e => {
+    e.dataTransfer.setData('item-id', e.target.id)
+  }
+})
+}

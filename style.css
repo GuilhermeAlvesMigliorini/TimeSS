@@ -33,7 +33,7 @@ body {
 
 .toDo-list {
   background-color: #666;
-  min-height: 60vh;
+  min-height: 58vh;
 }
 
 .inProgress-list,
@@ -91,7 +91,9 @@ form input {
 
 .add-task-button {
   font-weight: 900;
-  background-color: #444;
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
   border: none;
   color: rgb(43, 214, 71);
 }
