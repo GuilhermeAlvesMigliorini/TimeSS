@@ -8,14 +8,23 @@
   <title>Time Tracker</title>
 </head>
 <body>
-  <div class="container">
-    <div class="task">
-      <div class="task-title"><h2>To Do</h2></div>
 
-      <form>
-        <input sc-addTask class type="text" placeholder="Add Task"><!-- 
-        --><spam sc-addButton class="add-task-button">+</spam>>
-      </form>
+  <div class="task-creator">
+    <form class="task-creator-form">
+      <input sc-addTask class="add-task-box" type="text" placeholder="Add Task">
+      <textarea class="task-description" name="taskDescription" rows="10" placeholder="Task Description..."></textarea>
+      <div sc-addButton class="add-task-button">+</div>
+    </form>
+  </div>
+  
+  <div class="container-tasks">
+    
+
+      <div class="task-title">
+        <h2>To Do</h2>
+      </div>
+
+     
 
       <div class="toDo">
 
@@ -24,9 +33,7 @@
         </div>
 
       </div>
-    </div>
     
-    <div class="task">
       <div class="task-title"><h2>In Progress</h2></div>
       <div class="inProgress">
         
@@ -35,9 +42,7 @@
         </div>
 
       </div>
-    </div>
     
-    <div class="task">
       <div class="task-title"><h2>Done</h2></div>
       <div class="done">
 
@@ -46,7 +51,6 @@
         </div>
 
       </div>
-    </div>
     </div>
     
 

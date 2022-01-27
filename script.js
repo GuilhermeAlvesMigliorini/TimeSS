@@ -1,7 +1,4 @@
 
-
-
-
 setDraggable()
 
 const dropzones = document.querySelectorAll('[sc-dropzone]')
